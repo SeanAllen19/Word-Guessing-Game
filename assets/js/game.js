@@ -1,1 +1,2 @@
-//// starter js starting again
+console.log('wordle v2. incoming')
+
