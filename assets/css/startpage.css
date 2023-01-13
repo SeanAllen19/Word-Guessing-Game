@@ -1,5 +1,5 @@
 :root {
-    --red:#EF476F;
+    --bred:#EF476F;
     --yellow: #FFD166;
     --green: #06D6A0;
     --lightblue: #118AB2;
@@ -8,10 +8,10 @@
 
 body {
     font-size: 48px;
-    background-color: #FFD166;
+    background-color: #073B4C;
 }
 
-
+/* title container */
 .headerContainer {
     display: flex;
     flex-direction: column;
@@ -22,7 +22,7 @@ body {
 }
 
 
-
+/* container of buttons */
 .formContainer {
     display: flex;
     align-items: center;
@@ -32,11 +32,63 @@ body {
     font-size: 80%;
 }
 
+/* button styling */
+button {
+  appearance: none;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Inter';
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 15px;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  will-change: transform;
+}
+
+#easy:hover {
+  color: #fff;
+  background-color: #06D6A0;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-8px);
+}
+
+#medium:hover {
+    color: #fff;
+    background-color: #FFD166;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-8px);
+}
+
+#hard:hover {
+    color: #fff;
+    background-color: #EF476F;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-8px);
+}
 
 
+button:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
+
+/* WhichWord title */
 h1 {
     font-family: 'Inter', sans-serif;
     font-size: 150%;
     margin-bottom: 5px;
+    color: white;
 }
 
