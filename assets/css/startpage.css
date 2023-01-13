@@ -14,16 +14,18 @@ body {
 
 .headerContainer {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    /* min-height: 100vh; */
+    min-height: 100vh;
 }
 
 
 
 .formContainer {
     display: flex;
+    align-items: center;
     place-items: center;
     font-family: 'Inter', sans-serif;
     font-weight: bold;
@@ -35,5 +37,6 @@ body {
 h1 {
     font-family: 'Inter', sans-serif;
     font-size: 150%;
+    margin-bottom: 5px;
 }
 
