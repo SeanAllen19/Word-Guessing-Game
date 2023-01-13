@@ -5,17 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> -->
+    <link rel="stylesheet" href="./assets/css/startpage.css" type="text/css" charset="utf-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;900&display=swap" rel="stylesheet">
+    <!-- <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;900&display=swap');
+        </style> -->
+           
     <title>Word Guessing Game</title>
 </head>
 <body>
-    <h1>WhichWord</h1>
-    <form>
-        <label for="easy"><input type="radio" name="diffLevel" id="easy" value="easy">EASY</label>
-        <label for="medium"><input type="radio" name="diffLevel" id="medium" value="medium">MEDIUM</label>
-        <label for="hard"><input type="radio" name="diffLevel" id="hard" value="hard">HARD</label>
-        <button id="submit">PLAY</button>
+    <div class="headerContainer">
+       <h1>WhichWord</h1>
+    </div>
+    <form class="formContainer">
+        <label for="easy"><input type="radio" name="diffLevel" id="easy" value="easy">Easy</label>
+        <label for="medium"><input type="radio" name="diffLevel" id="medium" value="medium">Medium</label>
+        <label for="hard"><input type="radio" name="diffLevel" id="hard" value="hard">Hard</label>
     </form>
-    <script src="./assets/js/start.js"></script>
+        <div>
+            <button id="submit">PLAY</button>
+        </div>
+  <script src="./assets/js/start.js"></script>
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script> -->
 </body>
 </html>

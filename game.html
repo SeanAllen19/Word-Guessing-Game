@@ -4,68 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/game.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="./assets/css/startpage.css" type="text/css" charset="utf-8">
+    <style type="text/css"> body { font-family: 'interregular'; } </style>
     <title>Word Guessing Game</title>
 </head>
 <body>
-   
-    <!--Materlize Grid --->
-    <div class="row 1">
-        <div class="col s1 1st"><input type="text" class="input-box" maxlength="1"></div>
-        <div class="col s1 2nd"><input type="text" class="input-box" maxlength="1">2</div>
-        <div class="col s1 3rd"><input type="text" class="input-box" maxlength="1">3</div>
-        <div class="col s1 4th"><input type="text" class="input-box" maxlength="1">4</div>
-        <div class="col s1 5th"><input type="text" class="input-box" maxlength="1">5</div>
-        <div class="col s1 6th"><input type="text" class="input-box" maxlength="1">6</div>
+   <div id="game">
+        <div class="grid">
+            <div class="box missing">a</div>
+            <div class="box correct">b</div>
+            <div class="box wrong">w</div>
+            <div class="box">y</div>
+            <div class="box">y</div>
+        </div>
     </div>
 
-    <div class="row 2">
-        <div class="col s1 1st"><input type="text" class="input-box" maxlength="1">1</div>
-        <div class="col s1 2nd"><input type="text" class="input-box" maxlength="1">2</div>
-        <div class="col s1 3rd"><input type="text" class="input-box" maxlength="1">3</div>
-        <div class="col s1 4th"><input type="text" class="input-box" maxlength="1">4</div>
-        <div class="col s1 5th"><input type="text" class="input-box" maxlength="1">5</div>
-        <div class="col s1 6th"><input type="text" class="input-box" maxlength="1">6</div>
-    </div>
-
-    <div class="row 3">
-        <div class="col s1 1st"><input type="text" class="input-box" maxlength="1">1</div>
-        <div class="col s1 2nd"><input type="text" class="input-box" maxlength="1">2</div>
-        <div class="col s1 3rd"><input type="text" class="input-box" maxlength="1">3</div>
-        <div class="col s1 4th"><input type="text" class="input-box" maxlength="1">4</div>
-        <div class="col s1 5th"><input type="text" class="input-box" maxlength="1">5</div>
-        <div class="col s1 6th"><input type="text" class="input-box" maxlength="1">6</div>
-    </div>
-
-    <div class="row 4">
-        <div class="col s1 1st"><input type="text" class="input-box" maxlength="1">1</div>
-        <div class="col s1 2nd"><input type="text" class="input-box" maxlength="1">2</div>
-        <div class="col s1 3rd"><input type="text" class="input-box" maxlength="1">3</div>
-        <div class="col s1 4th"><input type="text" class="input-box" maxlength="1">4</div>
-        <div class="col s1 5th"><input type="text" class="input-box" maxlength="1">5</div>
-        <div class="col s1 6th"><input type="text" class="input-box" maxlength="1">6</div>
-    </div>
-
-    <div class="row 5">
-        <div class="col s1 1st"><input type="text" class="input-box" maxlength="1">1</div>
-        <div class="col s1 2nd"><input type="text" class="input-box" maxlength="1">2</div>
-        <div class="col s1 3rd"><input type="text" class="input-box" maxlength="1">3</div>
-        <div class="col s1 4th"><input type="text" class="input-box" maxlength="1">4</div>
-        <div class="col s1 5th"><input type="text" class="input-box" maxlength="1">5</div>
-        <div class="col s1 6th"><input type="text" class="input-box" maxlength="1">6</div>
-    </div>
-
-    <div class="row 6">
-        <div class="col s1 1st"><input type="text" class="input-box" maxlength="1">1</div>
-        <div class="col s1 2nd"><input type="text" class="input-box" maxlength="1">2</div>
-        <div class="col s1 3rd"><input type="text" class="input-box" maxlength="1">3</div>
-        <div class="col s1 4th"><input type="text" class="input-box" maxlength="1">4</div>
-        <div class="col s1 5th"><input type="text" class="input-box" maxlength="1">5</div>
-        <div class="col s1 6th"><input type="text" class="input-box" maxlength="1">6</div>
-    </div>
-
-    <!--Title of the game, possibly -->
-    <h1>Wordle v2</h1>
+    <!--Title of the game -->
+    <h1 class="title flexbox">Wordle v2</h1>
 
 
     <!---materlize button --->
@@ -73,5 +31,7 @@
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="./assets/js/game.js"></script>
 </body>
 </html>
+<!----commit so I can push to MAIN-->
