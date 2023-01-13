@@ -1,5 +1,14 @@
 console.log('wordle v2. incoming')
-//// 
+
+var chosenWord = JSON.parse(localStorage.getItem('wordInfo')) 
+var winningWord = chosenWord.word;
+
+document.addEventListener("DOMContentLoaded", () => {
+    getCount();
+    keyboardEvents();
+})
+
+
 // will get the count var from local storage and change the create grid function to fit depeneding on difficulty chosen;
 function getCount() {
     var storage = JSON.parse(localStorage.getItem('wordInfo'))
@@ -38,6 +47,19 @@ function backgroundColor(count) {
             gameBoard.appendChild(box);
         }
     }
+    function keyboardEvents() {
+        document.body.onkeydown = (e) => {
+            var key = e.key;
 
+            if (key === 'Enter'){
+                console.log('Enter key has been pressed')
+            }
+
+            if (key === 'Backspace') {
+
+            }
+        }
+    }
+    
     getCount();
   
