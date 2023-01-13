@@ -49,19 +49,19 @@ function setItemInStorage(data, count) {
 
 play.addEventListener('click', (e) => {
     e.preventDefault()
-    // diffLevel()
+    diffLevel()
 })
 
-var word = 'steady'
+// var word = 'steady'
 
-console.log(word)
-console.log(word.split(''))
+// console.log(word)
+// console.log(word.split(''))
 
-var letters = word.split('')
+// var letters = word.split('')
 
-var y = 's'
+// var y = 's'
 
-console.log(letters.includes(y))
+// console.log(letters.includes(y))
 
-console.log(letters.includes(y,0))
+// console.log(letters.includes(y,0))
 
