@@ -1,10 +1,12 @@
 console.log('wordle v2. incoming')
 
 var chosenWord = JSON.parse(localStorage.getItem('wordInfo')) 
-var winningWord = chosenWord.word;
+var winningWord = chosenWord.wordLength;
+console.log(winningWord)
+
 
 document.addEventListener("DOMContentLoaded", () => {
-    getCount();
+   
     keyboardEvents();
 })
 
