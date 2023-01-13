@@ -7,7 +7,7 @@
     --black: #000;
 }
 body{
-    background-color: #FFD166;
+    min-height: 80vh;
 }
 
 header {
@@ -17,14 +17,15 @@ header {
 
 .title {
     color: var(--black);
-    font-size: 2.5rem;
+    font-size: 3.0rem;
     font-weight: bold;
     margin: 0.5rem 0 0.5rem 0;
     text-align: center;
-    font-family: Inter,;
+    font-family: 'Inter'
 }
 
 #game-container {
+    margin-top: 20vh;
     display: flex;
     height:100%;
     align-items: center;
@@ -40,7 +41,7 @@ header {
 }
 
 #grid {
-    border: 2px solid black;
+    border: 8px solid black;
     border-radius: 20px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
