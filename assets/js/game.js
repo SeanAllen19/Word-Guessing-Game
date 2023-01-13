@@ -1,6 +1,11 @@
 console.log('wordle v2. incoming')
-//// 
-// will get the count var from local storage and change the create grid function to fit depeneding on difficulty chosen;
+var chosenWord = JSON.parse(localStorage.getItem('wordInfo'))
+console.log(chosenWord)
+document.addEventListener("DOMContentLoaded", () => {
+    getCount();
+    keyboardEvents();
+})
+
 function getCount() {
     var storage = JSON.parse(localStorage.getItem('wordInfo'))
     console.log(storage)
@@ -13,11 +18,11 @@ function getCount() {
     createGrid(grid, count)
 }
 
-  function createGrid(grid, count) {
+function createGrid(grid, count) {
         var gameBoard = document.getElementById("grid");
-        // 30 (squares) for 5 rows of 6. 
+        
         for(var i=0; i < grid; i++) {
-            //Creating divs with a class .box and a id with a number in it.
+            //Creating divs with a class .box and a id with a number in it base on which difficulty was chosen.
             var box = document.createElement("div");
             var gridrows = document.getElementById('grid').style.gridTemplateColumns = 'repeat('+count +', 1fr)';
             box.classList.add("box"); 
@@ -25,8 +30,22 @@ function getCount() {
             gameBoard.appendChild(box);
         }
     }
+    console.log(count)
+    function keyboardEvents() {
+        document.body.onkeydown = (e) => {
+            var key = e.key;
 
-document.addEventListener("DOMContentLoaded", () => {
-    getCount();
-  
-})
+            if (key === 'Enter'){
+                console.log('Enter key has been pressed')
+            }
+
+            if (key === 'Backspace') {
+
+            }
+        }
+    }
+
+
+ 
+
+
