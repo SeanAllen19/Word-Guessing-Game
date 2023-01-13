@@ -29,6 +29,7 @@ function createGrid(grid, count) {
             var gridrows = document.getElementById('grid').style.gridTemplateColumns = 'repeat('+count +', 1fr)';
             box.classList.add("box"); 
             box.setAttribute("id", i + 1);
+            box.setAttribute
             gameBoard.appendChild(box);
         }
     }
