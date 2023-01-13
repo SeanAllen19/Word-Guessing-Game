@@ -6,10 +6,10 @@ var hard = document.getElementById('hard');
 
 function diffLevel() {
     if(easy.checked) {
-    var count = 5
+        var count = 5
     }  
     if(medium.checked) {
-     var count = 7
+        var count = 7
     }
     if(hard.checked) {
          var count = 10
@@ -43,12 +43,25 @@ function setItemInStorage(data, count) {
         word: data
     }
     localStorage.setItem("wordInfo", JSON.stringify(wordInfo))
+    window.location.assign('./game.html')
 }
-
 
 
 play.addEventListener('click', (e) => {
     e.preventDefault()
-    // diffLevel()
-    // window.location.assign('./game.html')
+    diffLevel()
 })
+
+// var word = 'steady'
+
+// console.log(word)
+// console.log(word.split(''))
+
+// var letters = word.split('')
+
+// var y = 's'
+
+// console.log(letters.includes(y))
+
+// console.log(letters.includes(y,0))
+
