@@ -1,6 +1,8 @@
 console.log('wordle v2. incoming')
-var chosenWord = JSON.parse(localStorage.getItem('wordInfo'))
-console.log(chosenWord)
+
+var chosenWord = JSON.parse(localStorage.getItem('wordInfo')) 
+var winningWord = chosenWord.word;
+
 document.addEventListener("DOMContentLoaded", () => {
     getCount();
     keyboardEvents();
@@ -30,7 +32,7 @@ function createGrid(grid, count) {
             gameBoard.appendChild(box);
         }
     }
-    console.log(count)
+    
     function keyboardEvents() {
         document.body.onkeydown = (e) => {
             var key = e.key;
