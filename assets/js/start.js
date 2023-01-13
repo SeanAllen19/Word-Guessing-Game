@@ -2,6 +2,19 @@ var play = document.getElementById('submit');
 var easy = document.getElementById('easy');
 var medium = document.getElementById('medium');
 var hard = document.getElementById('hard');
+var easyChange = document.getElementById('colorChange');
+
+easy.addEventListener("mouseover", function() {
+    easyChange.style.color = '#06D6A0'
+});
+
+medium.addEventListener("mouseover", function() {
+    easyChange.style.color = '#FFD166'
+});
+
+hard.addEventListener("mouseover", function() {
+    easyChange.style.color = '#EF476F'
+});
 
 
 function diffLevel() {
@@ -47,10 +60,11 @@ function setItemInStorage(data, count) {
 }
 
 
-play.addEventListener('click', (e) => {
-    e.preventDefault()
-    diffLevel()
-})
+// play.addEventListener('click', (e) => {
+//     e.preventDefault()
+//     diffLevel()
+// })
+
 
 // var word = 'steady'
 
