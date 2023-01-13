@@ -59,8 +59,7 @@ console.log(word.split(''))
 
 var letters = word.split('')
 
-var y = 's
-'
+var y = 's'
 
 console.log(letters.includes(y))
 
