@@ -1,22 +1,7 @@
-var play = document.getElementById('submit');
+
 var easy = document.getElementById('easy');
 var medium = document.getElementById('medium');
 var hard = document.getElementById('hard');
-
-
-function diffLevel() {
-    if(easy.checked) {
-        var count = 5
-    }  
-    if(medium.checked) {
-        var count = 7
-    }
-    if(hard.checked) {
-         var count = 10
-    } 
-    console.log(count)
-    getRandomWord(count)
-} 
 
 
 function getRandomWord(count) {  const options = {
@@ -46,22 +31,23 @@ function setItemInStorage(data, count) {
     window.location.assign('./game.html')
 }
 
-
-play.addEventListener('click', (e) => {
+easy.addEventListener('click', (e) => {
     e.preventDefault()
-    diffLevel()
+    var count = 5
+    getRandomWord(count)
 })
 
-// var word = 'steady'
+medium.addEventListener('click', (e) => {
+    e.preventDefault()
+    var count = 6
+    getRandomWord(count)
+})
 
-// console.log(word)
-// console.log(word.split(''))
+hard.addEventListener('click', (e) => {
+    e.preventDefault()
+    var count = 7
+    getRandomWord(count)
+})
 
-// var letters = word.split('')
 
-// var y = 's'
-
-// console.log(letters.includes(y))
-
-// console.log(letters.includes(y,0))
 
