@@ -2,18 +2,22 @@
 var easy = document.getElementById('easy');
 var medium = document.getElementById('medium');
 var hard = document.getElementById('hard');
-var easyChange = document.getElementById('colorChange');
+// var easyChange = document.getElementById('colorChange');
+var easyChange2 = document.getElementById('colorChange2');
 
 easy.addEventListener("mouseover", function() {
-    easyChange.style.color = '#06D6A0'
+    // easyChange.style.color = '#06D6A0'
+    easyChange2.style.color = '#06D6A0'
 });
 
 medium.addEventListener("mouseover", function() {
-    easyChange.style.color = '#FFD166'
+    // easyChange.style.color = '#FFD166'
+    easyChange2.style.color = '#FFD166'
 });
 
 hard.addEventListener("mouseover", function() {
-    easyChange.style.color = '#EF476F'
+    // easyChange.style.color = '#EF476F'
+    easyChange2.style.color = '#EF476F'
 });
 
 

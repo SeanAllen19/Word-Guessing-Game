@@ -4,7 +4,6 @@ var chosenWord = JSON.parse(localStorage.getItem('wordInfo'))
 var winningWord = chosenWord.word;
 
 document.addEventListener("DOMContentLoaded", () => {
-    getCount();
     keyboardEvents();
 })
 
