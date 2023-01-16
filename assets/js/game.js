@@ -126,10 +126,11 @@ function animation() {
         }
     } else if (triedWord[currentRow].join('') === word) {
         for(let i = 0; i < count; i++) {
+            let delay = 1[i]
             document.getElementById(`box${[currentRow]}${i}`).classList.add('bounce')
+            document.getElementById(`box${[currentRow]}${i}`).classList.add(`bounce${i}`)
         }
     }
-
 }
 
 function winGame () {

@@ -12,12 +12,16 @@ body{
     background-color: var(--darkblue);
 }
 
-#modal{
+/* #modal{
     position: absolute;
-    background-color: white;
-    height: 20vh;
-    width: 20vw;
-}
+    background-color: var(--lightblue);
+    left: 35%;
+    top: 25%;
+    height: 35vh;
+    width: 35vw;
+    border: solid 5px var(--white);
+} */
+
 
 p {
     width: 50%;
@@ -95,8 +99,35 @@ p {
     animation: 0.5s bounce;
     animation-direction: alternate;
     animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
-    animation-iteration-count: infinite;
+    animation-iteration-count: 2;
 }
+
+.bounce0 {
+    animation-delay: 0s;
+}
+.bounce1 {
+    animation-delay: 0.5s;
+}
+.bounce2 {
+    animation-delay: 1s;
+}
+.bounce3 {
+    animation-delay: 1.5s;
+}
+.bounce4 {
+    animation-delay: 2s;
+}
+.bounce5 {
+    animation-delay: 2.5s;
+}
+.bounce6 {
+    animation-delay: 3s;
+}
+.bounce7 {
+    animation-delay: 3.6s;
+}
+
+
 
 @keyframes bounce {
     from {
