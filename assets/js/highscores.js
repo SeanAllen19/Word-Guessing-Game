@@ -13,12 +13,33 @@ function getApi() {
 		}
 	};
 	
+	// fetch('https://dictionary-by-api-ninjas.p.rapidapi.com/v1/dictionary?word=bright', options)
+	// 	.then(response => response.json())
+	// 	.then(response => console.log(response))
+	// 	.catch(err => console.error(err));
+		
 	fetch('https://dictionary-by-api-ninjas.p.rapidapi.com/v1/dictionary?word=bright', options)
-		.then(response => response.json())
-		.then(response => console.log(response))
-		.catch(err => console.error(err));
-
+	.then((response) => {
+	  if (response.ok) {
+		return response.json();
+	  } else {
+		throw new Error("NETWORK RESPONSE ERROR");
+	  }
+	})
+	.then(data => {
+	  console.log(data);
+	  displayDefinition(data)
+	})
+	.catch((error) => console.error("FETCH ERROR:", error));
 }
+function displayDefinition(data) {
+		const definition = data.definition;
+		const definitionDiv = document.getElementById("definition");
+		const wordDef = definition.definition;
+		const heading = document.createElement("p");
+  		heading.innerHTML = definition;
+  		definitionDiv.appendChild(heading);
+	} 
 
     fetchButton.addEventListener('click', getApi);
 
