@@ -75,7 +75,7 @@ function keyboardEvents() {
     }
 }
 
-    // This adds the keyboard input into the boxes...the if statement prevents the user from adding more input after the end of the row is reached
+// This adds the keyboard input into the boxes...the if statement prevents the user from adding more input after the end of the row is reached
 function letterInput(pressedKey) {
     pressedKey = pressedKey.toUpperCase()
     let box = document.getElementById(`box${[currentRow]}${[currentCol]}`)
@@ -126,10 +126,11 @@ function animation() {
         }
     } else if (triedWord[currentRow].join('') === word) {
         for(let i = 0; i < count; i++) {
+            let delay = 1[i]
             document.getElementById(`box${[currentRow]}${i}`).classList.add('bounce')
+            document.getElementById(`box${[currentRow]}${i}`).classList.add(`bounce${i}`)
         }
     }
-
 }
 
 function winGame () {
@@ -139,7 +140,6 @@ function winGame () {
 function loseGame() {
         console.log("YOU LOSE!") 
 }
-
 
     keyboardEvents();
     getCount();
