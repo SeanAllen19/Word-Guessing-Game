@@ -1,0 +1,54 @@
+:root {
+    --red:#EF476F;
+    --yellow: #FFD166;
+    --green: #06D6A0;
+    --lightblue: #118AB2;
+    --darkblue: #073B4C;
+}
+
+body {
+    font-size: 28px;
+    background-color: #073B4C;
+
+}
+/*Title Text*/
+
+#WhichTitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 200%;
+    color: white;
+    font-weight: 800;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+}
+
+.row {
+    margin: 0px;
+}
+
+#cardrow1 {
+    
+}
+
+#cardrow2 {
+    
+}
+
+#cardrow3 {
+    
+}
+/* fdsfdsa */
+
+#CardTitle {
+    font-size: 110%;
+    font-weight: 600;
+}
+
+
+/* card reveal containers */
+#RevealContent {
+    background-color: var(--lightblue);
+}

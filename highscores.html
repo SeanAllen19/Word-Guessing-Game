@@ -5,24 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <title>Word Guessing Game</title>
+    <link rel="stylesheet" href="./assets/css/highscores.css">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;900&display=swap" rel="stylesheet">
+    <title>WhichWord Results</title>
 </head>
-<body>
+<body id="body">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 <!-- boxes below that will show API info for solution -->
-    <h1 class="center-align">More Fun With Today's Word!</h1>
-   <div class="row">
+  <h1 class="center-align" id="WhichTitle"><span id="colorChange2">WhichWord </span>Word Wiki</h1>
+   <div class="row" id="cardrow1">
     <div class="col s6 offset-s3"> 
-         <div class="card blue-grey darken-1">
-        <div class="card-content white-text center-align">
-          <span class="card-title">All About The Word</span>
+         <div class="card">
+        <div class="card-content black-text center-align">
+          <span class="card-title" id="CardTitle">All About The Word</span>
           <p>Click below to learn the definition, etymology, and synonyms for today's word.</p>
         </div>
         <div class="card-action center-align">
-          <a class="waves-effect waves-light activator btn-small" id="fetch-button">Info</a>
+          <a class="waves-effect waves-light activator btn-large" id="fetch-button">Info</a>
           <!-- <a href="#">Words API Call</a> -->
         </div>
-        <div class="card-reveal">
+        <div class="card-reveal" id="RevealContent">
           <span class="card-title grey-text text-darken-4">Info on Today's Word <i class="material-icons right">x</i></span>
           <p>Check it out. This is where the API info will be revealed. </p>
         </div>
@@ -30,18 +35,18 @@
     </div>
   </div>
 
-    <div class="row">
+    <div class="row" id="cardrow2">
       <div class="col s6 offset-s3">
-      <div class="card blue-grey darken-1">
-        <div class="card-content white-text center-align">
-          <span class="card-title">Today's Word In Music</span>
+      <div class="card" id="card2">
+        <div class="card-content black-text center-align">
+          <span class="card-title" id="CardTitle">Today's Word In Music</span>
           <p>Click below to find out what songs have featured today's word.</p>
         </div>
         <div class="card-action center-align">
-          <a class="waves-effect waves-light activator btn-small" id="fetch-button2">Info</a>
+          <a class="waves-effect waves-light activator btn-large" id="fetch-button2">Info</a>
         </div>  
           <!-- <a href="#">Shazam API Call</a> -->
-          <div class="card-reveal">
+          <div class="card-reveal" id="RevealContent">
             <span class="card-title grey-text text-darken-4">Info on Today's Word <i class="material-icons right">x</i></span>
             <p>Check it out. This is where the API info will be revealed. </p>
           </div>
@@ -50,18 +55,18 @@
     </div>
   </div>
 
-    <div class="row">
+    <div class="row" id="cardrow3">
       <div class="col s6 offset-s3">
-        <div class="card blue-grey darken-1">
-        <div class="card-content white-text center-align">
-          <span class="card-title">Today's Word In Quotes</span>
+        <div class="card darken-1">
+        <div class="card-content black-text center-align">
+          <span class="card-title" id="CardTitle">Today's Word In Quotes</span>
           <p>Click below to discover famous quotes that include today's word.</p>
         </div>
         <div class="card-action center-align">
-          <a class="waves-effect waves-light activator btn-small" id="fetch-button3">Info</a>
+          <a class="waves-effect waves-light activator btn-large" id="fetch-button3">Info</a>
         </div>
           <!-- <a href="#">Quote API Call</a> -->
-          <div class="card-reveal">
+          <div class="card-reveal" id="RevealContent">
             <span class="card-title grey-text text-darken-4">Info on Today's Word <i class="material-icons right">x</i></span>
             <p>Check it out. This is where the API info will be revealed. </p>
           </div>
