@@ -1,28 +1,23 @@
-
+// Difficulty button color change -------------------------------------------
 var easy = document.getElementById('easy');
 var medium = document.getElementById('medium');
 var hard = document.getElementById('hard');
-// var easyChange = document.getElementById('colorChange');
 var easyChange2 = document.getElementById('colorChange2');
 
 easy.addEventListener("mouseover", function() {
-    // easyChange.style.color = '#06D6A0'
     easyChange2.style.color = '#06D6A0'
 });
 
 medium.addEventListener("mouseover", function() {
-    // easyChange.style.color = '#FFD166'
     easyChange2.style.color = '#FFD166'
 });
 
 hard.addEventListener("mouseover", function() {
-    // easyChange.style.color = '#EF476F'
     easyChange2.style.color = '#EF476F'
 });
 
 
-
-
+// Random word API fetch ----------------------------------------------------
 function getRandomWord(count) {  const options = {
 	method: 'GET',
 	headers: {
@@ -41,6 +36,7 @@ fetch(requestUrl, options)
     .catch(err => console.error(err));
 }
 
+// Fetched random word in local storage -----------------------------------
 function setItemInStorage(data, count) {
     var wordInfo = {
         wordLength: count, 
@@ -50,6 +46,7 @@ function setItemInStorage(data, count) {
     window.location.assign('./game.html')
 }
 
+// Difficulty choice determines # of boxes in game screen ------------------
 easy.addEventListener('click', (e) => {
     e.preventDefault()
     var count = 5
