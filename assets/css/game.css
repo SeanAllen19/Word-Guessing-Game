@@ -5,19 +5,27 @@
     --lightblue: #118AB2;
     --darkblue: #073B4C;
     --black: #000;
+    --white: white;
 }
 body{
     min-height: 80vh;
+    background-color: var(--darkblue);
 }
 
-header {
-    border-bottom: 10px dotted black;
-
+p {
+    width: 50%;
+    text-align: center;
+    margin-left: 25%;
+    color: var(--white);
+    font-family: 'Inter';
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding-bottom: .5%;
 }
 
 .title {
-    color: var(--black);
-    font-size: 3.0rem;
+    /* color: var(--white); */
+    font-size: 5.0rem;
     font-weight: bold;
     margin: 0.5rem 0 0.5rem 0;
     text-align: center;
@@ -25,7 +33,7 @@ header {
 }
 
 #game-container {
-    margin-top: 20vh;
+    margin-top: 10vh;
     display: flex;
     height:100%;
     align-items: center;
@@ -33,6 +41,7 @@ header {
 }
 
 #grid-container {
+    padding-top: 1.5%;
    display:  flex;
    align-items: center;
    justify-content: center;
@@ -41,7 +50,7 @@ header {
 }
 
 #grid {
-    border: 8px solid black;
+    border: 8px solid var(--white);
     border-radius: 20px;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -52,12 +61,27 @@ header {
 }
 
 .box {
-    border: 2px solid black;
+    border: 2px solid var(--white);
     min-width:60px;
     min-height:60px;
     font-size: 2rem;
     border-radius: 0.5rem;
+    text-align: center;
+    padding-top: 20%;
+    font-family: 'Inter', sans-serif;
 }
+
+.shake {
+    animation: 1s shake;
+  }
+
+@keyframes shake {
+    0% { transform: translateX(0) }
+    25% { transform: translateX(5px) }
+    50% { transform: translateX(-5px) }
+    75% { transform: translateX(5px) }
+    100% { transform: translateX(0) }
+   }
 
 /* .box {
     display: grid;
