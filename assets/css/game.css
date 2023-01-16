@@ -73,7 +73,7 @@ p {
 
 .shake {
     animation: 1s shake;
-  }
+}
 
 @keyframes shake {
     0% { transform: translateX(0) }
@@ -81,8 +81,24 @@ p {
     50% { transform: translateX(-5px) }
     75% { transform: translateX(5px) }
     100% { transform: translateX(0) }
-   }
+}
 
+
+.bounce {
+    animation: 0.5s bounce;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+    to {
+        transform: translate3d(0, -25px, 0);
+    }
+}
 /* .box {
     display: grid;
 
