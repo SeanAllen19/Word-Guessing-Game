@@ -12,6 +12,13 @@ body{
     background-color: var(--darkblue);
 }
 
+#modal{
+    position: absolute;
+    background-color: white;
+    height: 20vh;
+    width: 20vw;
+}
+
 p {
     width: 50%;
     text-align: center;

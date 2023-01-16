@@ -75,7 +75,7 @@ function keyboardEvents() {
     }
 }
 
-    // This adds the keyboard input into the boxes...the if statement prevents the user from adding more input after the end of the row is reached
+// This adds the keyboard input into the boxes...the if statement prevents the user from adding more input after the end of the row is reached
 function letterInput(pressedKey) {
     pressedKey = pressedKey.toUpperCase()
     let box = document.getElementById(`box${[currentRow]}${[currentCol]}`)
@@ -134,7 +134,6 @@ function winGame () {
 function loseGame() {
         console.log("YOU LOSE!") 
 }
-
 
     keyboardEvents();
     getCount();
