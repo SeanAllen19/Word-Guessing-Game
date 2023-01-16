@@ -53,19 +53,19 @@ function setItemInStorage(data, count) {
 easy.addEventListener('click', (e) => {
     e.preventDefault()
     var count = 5
-    getRandomWord(count)
+    // getRandomWord(count)
 })
 
 medium.addEventListener('click', (e) => {
     e.preventDefault()
     var count = 6
-    getRandomWord(count)
+    // getRandomWord(count)
 })
 
 hard.addEventListener('click', (e) => {
     e.preventDefault()
     var count = 7
-    getRandomWord(count)
+    // getRandomWord(count)
 })
 
 
