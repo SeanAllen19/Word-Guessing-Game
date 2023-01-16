@@ -55,7 +55,10 @@ function keyboardEvents() {
                 // box.textContent = " "
                 currentRow++
                 currentCol = 0
-            }     
+            }    
+            if (currentRow === count+1) {
+                loseGame()
+            } 
         }
 
         if (key === 'Backspace') {
@@ -120,6 +123,10 @@ function checkWord() {
 function winGame () {
     console.log("YOU WON!")
     // maybe create a modal of some sore that will say you win and then have a constinue button so that the user can go to the highscores page
+}
+
+function loseGame() {
+    console.log('You lose!')
 }
     keyboardEvents();
     getCount();
