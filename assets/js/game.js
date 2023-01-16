@@ -124,7 +124,12 @@ function animation() {
         for(let i = 0; i < count; i++) {
             document.getElementById(`box${[currentRow]}${i}`).classList.add('shake')
         }
+    } else if (triedWord[currentRow].join('') === word) {
+        for(let i = 0; i < count; i++) {
+            document.getElementById(`box${[currentRow]}${i}`).classList.add('bounce')
+        }
     }
+
 }
 
 function winGame () {
