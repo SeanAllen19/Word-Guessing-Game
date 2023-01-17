@@ -1,5 +1,5 @@
 var storage = JSON.parse(localStorage.getItem('wordInfo'))
-var storageWord= 'parsnip' //storage.word
+var storageWord= storage.word
 
 
 // Api section ---------------------------------------------------------------
