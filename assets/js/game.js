@@ -126,19 +126,33 @@ function animation() {
         }
     } else if (triedWord[currentRow].join('') === word) {
         for(let i = 0; i < count; i++) {
-            let delay = 1[i]
             document.getElementById(`box${[currentRow]}${i}`).classList.add('bounce')
             document.getElementById(`box${[currentRow]}${i}`).classList.add(`bounce${i}`)
+
+
         }
     }
 }
 
+function makeModal(winLose) {
+    var modal = document.getElementById('modal')
+    var modalBackground = document.getElementById('modal-background')
+    var winStatement = document.getElementById('winLose')
+    var theWord = document.getElementById('theWord')
+    winStatement.textContent = "YOU " + winLose + "!"
+    theWord.textContent = 'The correct word was ' + word + '.';
+    modal.classList.remove('none');
+    modalBackground.classList.remove('none');    
+}
+
 function winGame () {
-    console.log("YOU WON!")
+    setTimeout(makeModal, 2000,'WIN')
+    
 }
 
 function loseGame() {
-        console.log("YOU LOSE!") 
+    makeModal('LOSE')
+     
 }
 
     keyboardEvents();
