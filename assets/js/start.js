@@ -1,22 +1,3 @@
-// Difficulty button color change -------------------------------------------
-var easy = document.getElementById('easy');
-var medium = document.getElementById('medium');
-var hard = document.getElementById('hard');
-var easyChange2 = document.getElementById('colorChange2');
-
-easy.addEventListener("mouseover", function() {
-    easyChange2.style.color = '#06D6A0'
-});
-
-medium.addEventListener("mouseover", function() {
-    easyChange2.style.color = '#FFD166'
-});
-
-hard.addEventListener("mouseover", function() {
-    easyChange2.style.color = '#EF476F'
-});
-
-
 // Random word API fetch ----------------------------------------------------
 function getRandomWord(count) {  const options = {
 	method: 'GET',

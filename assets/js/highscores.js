@@ -92,16 +92,16 @@ function displaySong(data) {
     fetchButton2.addEventListener('click', getApi2);
 
 // Color change -------------------------------------------------------------
-var easyChange = document.getElementById('colorChange2');
-var background = document.getElementById('body');
+// var easyChange = document.getElementById('colorChange2');
+// var background = document.getElementById('body');
 
 
-fetchButton.addEventListener("mouseover", function() {
-    easyChange.style.color = '#06D6A0'
-	background.style.backgroundColor = '#EF476F'
-});
+// fetchButton.addEventListener("mouseover", function() {
+//     easyChange.style.color = '#06D6A0'
+// 	background.style.backgroundColor = '#EF476F'
+// });
 
-fetchButton2.addEventListener("mouseover", function() {
-    easyChange.style.color = '#FFD166'
-	background.style.backgroundColor = '#06D6A0'
-});
+// fetchButton2.addEventListener("mouseover", function() {
+//     easyChange.style.color = '#FFD166'
+// 	background.style.backgroundColor = '#06D6A0'
+// });
