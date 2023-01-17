@@ -48,7 +48,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 We were assigned together to work on a project and with most ideas we brainstormed and shared ideas.
 
-![Dominiques sketch](./assets/Doms%201st%20sketch.jpg)
+![Dominiques sketch](./assets/Dom%201st%20sketch.jpg)
 
 ![Bretts sketch](./assets/Bretts%201st%20sketch.jpg)
 
