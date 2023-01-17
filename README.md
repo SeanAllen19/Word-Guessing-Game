@@ -23,16 +23,16 @@ These instructions will get you a copy of the project up and running on your loc
 8. Press Enter and a new local cloned repository will be created.
 
 
-## Start Page
+### Start Page
 ![start page](./assets/whichword%20title.png)
 
-## Game Page
+### Game Page
 ![gameplay](./assets/whichword%20gameplay.png)
 
-## End Screen Page
+### End Screen Page
 ![end page](./assets/whichword%20end%20page.png)
 
-## Authors
+# Authors
    
   Brett Nachman - https://github.com/brettnachman
   
@@ -44,6 +44,39 @@ These instructions will get you a copy of the project up and running on your loc
   
   
  
-##Acknowledgements
+# Developments
+
+We were assigned together to work on a project and with most ideas we brainstormed and shared ideas.
+
+![Dominiques sketch](./assets/Doms%201st%20sketch.jpg)
+
+![Bretts sketch](./assets/Bretts%201st%20sketch.jpg)
 
 
+# Acknowledgements
+
+Thank you to all of our friends, online and IRL for all of the help and motivation!!
+
+Github 
+
+Random Words API - https://rapidapi.com/sheharyar566/api/random-words5
+
+Shazam API - https://rapidapi.com/apidojo/api/shazam
+
+Words API - https://rapidapi.com/dpventures/api/wordsapi/
+
+Materialize, CSS Framework - https://materializecss.com/about.html
+
+Inter, Google Fonts - https://fonts.google.com/specimen/Inter
+
+Coolers, Color Palette generator - https://coolors.co/
+
+Canva - https://www.canva.com/
+
+Double D - https://www.youtube.com/@DoubleDYouTube
+
+Ian Leneham - https://www.youtube.com/channel/UCU5seEXTjpF4RRfQn-4242A
+
+Freecodecamp - https://www.freecodecamp.org/
+
+Alabama Richmond
