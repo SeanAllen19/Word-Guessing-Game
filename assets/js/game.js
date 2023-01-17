@@ -144,12 +144,6 @@ function makeModal(winLose) {
     theWord.textContent = 'The correct word was ' + word + '.';
     modal.classList.remove('none');
     modalBackground.classList.remove('none'); 
-
-        // if(triedWord[currentRow].join('') === word) {
-        //     modal.style.backgroundColor = '#06D6A0'
-        // } else if (triedWord[currentRow].join('') !== word) {
-        //     modal.style.backgroundColor = '#EF476F'
-        // }
 }
 
 function winGame () {
