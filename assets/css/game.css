@@ -10,9 +10,51 @@
 body{
     min-height: 80vh;
     background-color: var(--darkblue);
+    font-family: 'Inter';
 }
 
-p {
+#modal-background {
+    overflow: hidden;
+    top: -10%;
+    height: 120vh;
+    width: 100vw;
+    background-color: rgba(0,0,0, 0.5);
+    position: fixed;
+}
+
+#modal{
+    line-height: 1.5rem ;
+    color: var(--white);
+    text-align: center;
+    position: absolute;
+    background-color: var(--lightblue);
+    left: 32%;
+    top: 35%;
+    height: 40vh;
+    width: 35vw;
+    border: solid 5px var(--white);
+}
+
+h4 {
+    font-size: 1.5rem;
+    color: var(--white);
+}
+
+
+.modalP {
+    padding-bottom: 10%;
+}
+
+.none {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white)
+}
+
+.directions {
     width: 50%;
     text-align: center;
     margin-left: 25%;
@@ -72,7 +114,8 @@ p {
 }
 
 .shake {
-    animation: 1s shake;
+    animation: .25s shake;
+    animation-iteration-count: 2;
 }
 
 @keyframes shake {
@@ -85,10 +128,35 @@ p {
 
 
 .bounce {
-    animation: 0.5s bounce;
+    animation: .3s bounce;
     animation-direction: alternate;
     animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
-    animation-iteration-count: infinite;
+    animation-iteration-count: 2;
+}
+
+.bounce0 {
+    animation-delay: 0s;
+}
+.bounce1 {
+    animation-delay: 0.25s;
+}
+.bounce2 {
+    animation-delay: 0.5s;
+}
+.bounce3 {
+    animation-delay: 0.75s;
+}
+.bounce4 {
+    animation-delay: 1s;
+}
+.bounce5 {
+    animation-delay: 1.25s;
+}
+.bounce6 {
+    animation-delay: 1.5s;
+}
+.bounce7 {
+    animation-delay: 1.75s;
 }
 
 @keyframes bounce {
@@ -96,7 +164,7 @@ p {
         transform: translate3d(0, 0, 0);
     }
     to {
-        transform: translate3d(0, -25px, 0);
+        transform: translate3d(0, -30px, 0);
     }
 }
 /* .box {

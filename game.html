@@ -15,11 +15,18 @@
 </head>
 
 <body>
+    <div id= "modal-background" class="none"></div>
+    <div id="modal" class="container none">
+        <h4 id="winLose"></h4>
+        <h6 id="theWord"></h6>
+        <p class="modalP">Click continue to see more information about todays word!</p>
+        <a href="./highscores.html"><button class="waves-effect waves-light btn white-text ">Continue</button></a>
+    </div>
     <div id="game-container">
         <div id="game">
             <header>
                 <h1 id = "title" class="title">WhichWord</h1> <!---- Title page ---->
-                <p>Type in the word you want to guess. If you think you're right hit enter. Keep guessing until you get the right answer or run out of guesses! </p>
+                <p class="directions">Type in the word you want to guess. If you think you're right hit enter. Keep guessing until you get the right answer or run out of guesses! </p>
 
             </header>
             <div id="grid-container"> <!---- Grid holding in all the boxes -->
@@ -31,9 +38,6 @@
             <a class="waves-effect waves-teal btn-flat">Button</a>
         </div>
     </div>
-
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./assets/js/game.js"></script>
 </body>

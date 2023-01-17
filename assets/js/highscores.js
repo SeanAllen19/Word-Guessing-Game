@@ -75,10 +75,15 @@ function displaySong(data) {
 		const songName = song.result.full_title;
 		const urlDiv = document.getElementById("url");
 		const songUrl = song.result.url
-		const heading = document.createElement("p");
-  		heading.innerHTML = songName;
-		heading.innerHTML = songUrl;
-  		songDiv.appendChild(heading);
+		const heading1 = document.createElement("p");
+  		heading1.innerHTML = songName;
+		songDiv.appendChild(heading1);
+		const heading2 = document.createElement("a");
+		heading2.textContent = songUrl
+		heading2.href = songUrl
+		heading2.setAttribute("target", "_blank")
+  		urlDiv.appendChild(heading2);
+		console.log(heading2)
 	} 
 
     fetchButton2.addEventListener('click', getApi2);
