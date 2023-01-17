@@ -128,7 +128,7 @@ a {
 
 
 .bounce {
-    animation: 0.20s bounce;
+    animation: .3s bounce;
     animation-direction: alternate;
     animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
     animation-iteration-count: 2;
