@@ -96,7 +96,7 @@ p {
 
 
 .bounce {
-    animation: 0.5s bounce;
+    animation: .3s bounce;
     animation-direction: alternate;
     animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
     animation-iteration-count: 2;
@@ -106,25 +106,25 @@ p {
     animation-delay: 0s;
 }
 .bounce1 {
-    animation-delay: 0.5s;
+    animation-delay: 0.25s;
 }
 .bounce2 {
-    animation-delay: 1s;
+    animation-delay: 0.5s;
 }
 .bounce3 {
-    animation-delay: 1.5s;
+    animation-delay: 0.75s;
 }
 .bounce4 {
-    animation-delay: 2s;
+    animation-delay: 1s;
 }
 .bounce5 {
-    animation-delay: 2.5s;
+    animation-delay: 1.25s;
 }
 .bounce6 {
-    animation-delay: 3s;
+    animation-delay: 1.5s;
 }
 .bounce7 {
-    animation-delay: 3.6s;
+    animation-delay: 1.75s;
 }
 
 
