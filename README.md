@@ -10,9 +10,27 @@ WhichWord is Wordle clone made with pure Javascript, HTML, and CSS. When you vis
 ## Screenshot 3
 
 
-
+## Authors
+   
+  Brett Nachman - https://github.com/brettnachman
+  
+  Jeremy Crouthamel - https://github.com/Leyden05
+  
+  Sean Allen - https://github.com/SeanAllen19
+  
+  Dominique Nix - https://github.com/Dominique216
+  
+  
+  
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+
+
+
+
+
+##Acknowledgements
 
 
