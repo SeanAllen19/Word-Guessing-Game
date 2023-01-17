@@ -27,10 +27,20 @@ WhichWord is Wordle clone made with pure Javascript, HTML, and CSS. When you vis
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
 
+1. Within GitHub, navigate to the main page of the repository.
 
+1. Click the Clone or download button.
 
+1. Copy the clone URL for the repository.
 
+1. Open Terminal or CMD Prompt(Windows).
 
-##Acknowledgements
+1. Change your current working directory to the location where you'd like the cloned directory be stored.
+
+1. git clone https://github.com/SeanAllen19/Word-Guessing-Game.git
+
+1. Press Enter and a new local cloned repository will be created.
+
+## Acknowledgements
 
 
