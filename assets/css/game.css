@@ -83,7 +83,8 @@ p {
 }
 
 .shake {
-    animation: 1s shake;
+    animation: .25s shake;
+    animation-iteration-count: 2;
 }
 
 @keyframes shake {
