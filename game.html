@@ -5,15 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/game.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <!-- <link rel="stylesheet" href="./assets/css/startpage.css" type="text/css" charset="utf-8"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;900&display=swap" rel="stylesheet">
-    <style type="text/css"> body { font-family: 'interregular'; } </style>
     <title>Word Guessing Game</title>
 </head>
 
@@ -21,7 +18,9 @@
     <div id="game-container">
         <div id="game">
             <header>
-                <h1 class="title">WhichWord</h1> <!---- Title page ---->
+                <h1 id = "title" class="title">WhichWord</h1> <!---- Title page ---->
+                <p>Type in the word you want to guess. If you think you're right hit enter. Keep guessing until you get the right answer or run out of guesses! </p>
+
             </header>
             <div id="grid-container"> <!---- Grid holding in all the boxes -->
                 <div id="grid"><!---- JS will create the boxes below -->
