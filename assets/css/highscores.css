@@ -29,19 +29,6 @@ p {
     margin: 0px;
 }
 
-#cardrow1 {
-    
-}
-
-#cardrow2 {
-    
-}
-
-#cardrow3 {
-    
-}
-/* fdsfdsa */
-
 #CardTitle {
     font-size: 110%;
     font-weight: 600;
@@ -52,3 +39,51 @@ p {
 #RevealContent {
     background-color: var(--lightblue);
 }
+
+button {
+    appearance: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: 'Inter';
+    font-size: 22px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 15px;
+    outline: none;
+    padding: 22px 80px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 100%;
+  }
+  
+  #easy:hover {
+    color: #fff;
+    background-color: #06D6A0;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-8px);
+  }
+  
+  #medium:hover {
+      color: #fff;
+      background-color: #FFD166;
+      box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+      transform: translateY(-8px);
+  }
+  
+  #hard:hover {
+      color: #fff;
+      background-color: #EF476F;
+      box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+      transform: translateY(-8px);
+  }
+  
+  
+  button:active {
+    box-shadow: none;
+    transform: translateY(0);
+  }
