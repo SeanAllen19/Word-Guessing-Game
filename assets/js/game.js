@@ -150,12 +150,6 @@ function makeModal(winLose) {
     theWord.textContent = 'The correct word was ' + word + '.';
     modal.classList.remove('none');
     modalBackground.classList.remove('none'); 
-
-        // if(triedWord[currentRow].join('') === word) {
-        //     modal.style.backgroundColor = '#06D6A0'
-        // } else if (triedWord[currentRow].join('') !== word) {
-        //     modal.style.backgroundColor = '#EF476F'
-        // }
 }
 
 // This will casue a modal with the text of WIN to pop up after the win animation runs animation 
@@ -165,7 +159,7 @@ function winGame () {
 }
 // This will cuase a modal with the text of LOSE to pop up after the last guess is made
 function loseGame() {
-    makeModal('LOSE')
+    setTimeout(makeModal, 2000,'LOSE')
      
 }
 
