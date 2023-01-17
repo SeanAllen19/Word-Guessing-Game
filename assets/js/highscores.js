@@ -31,7 +31,7 @@ function getApi() {
 function displayDefinition(data) {
 		const definition = data.definition;
 		const definitionDiv = document.getElementById("definition");
-		const wordDef = definition.definition;
+		// const wordDef = definition.definition;
 		const heading = document.createElement("p");
   		heading.innerHTML = definition;
   		definitionDiv.appendChild(heading);
@@ -73,8 +73,11 @@ function displaySong(data) {
 		const song = data.hits[0];
 		const songDiv = document.getElementById("song");
 		const songName = song.result.full_title;
+		const urlDiv = document.getElementById("url");
+		const songUrl = song.result.url
 		const heading = document.createElement("p");
   		heading.innerHTML = songName;
+		heading.innerHTML = songUrl;
   		songDiv.appendChild(heading);
 	} 
 
@@ -114,7 +117,7 @@ function getApi3() {
 function displayQuote(data) {
 		const wordUse = data.quote;
 		const quoteDiv = document.getElementById("quote");
-		const wordQuote = quote.quote;
+		// const wordQuote = quote.quote;
 		const heading = document.createElement("p");
   		heading.innerHTML = wordUse;
   		quoteDiv.appendChild(heading);
