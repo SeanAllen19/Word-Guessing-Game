@@ -73,6 +73,7 @@ function displaySong(data) {
 		const song = data.hits[0];
 		const songDiv = document.getElementById("song");
 		const songName = song.result.full_title;
+		const songUrl = sing.result.url
 		const heading = document.createElement("p");
   		heading.innerHTML = songName;
   		songDiv.appendChild(heading);
