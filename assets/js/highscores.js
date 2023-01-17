@@ -110,4 +110,5 @@ fetchButton.addEventListener("mouseover", function() {
 fetchButton2.addEventListener("mouseover", function() {
     easyChange.style.color = '#FFD166'
 	background.style.backgroundColor = '#06D6A0'
+
 });
