@@ -29,19 +29,6 @@ p {
     margin: 0px;
 }
 
-#cardrow1 {
-    
-}
-
-#cardrow2 {
-    
-}
-
-#cardrow3 {
-    
-}
-/* fdsfdsa */
-
 #CardTitle {
     font-size: 110%;
     font-weight: 600;
@@ -55,9 +42,7 @@ p {
 
 button {
     appearance: none;
-    /* border: 2px solid #1A1A1A; */
     border-radius: 10px;
-    /* box-sizing: border-box; */
     cursor: pointer;
     display: inline-block;
     font-family: 'Inter';

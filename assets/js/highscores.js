@@ -120,8 +120,6 @@ function displayQuote(data) {
   		quoteDiv.appendChild(heading);
 	} 
 
-    fetchButton3.addEventListener('click', getApi3);
-
 // Color change -------------------------------------------------------------
 var easyChange = document.getElementById('colorChange2');
 var background = document.getElementById('body');
@@ -135,9 +133,4 @@ fetchButton.addEventListener("mouseover", function() {
 fetchButton2.addEventListener("mouseover", function() {
     easyChange.style.color = '#FFD166'
 	background.style.backgroundColor = '#06D6A0'
-});
-
-fetchButton3.addEventListener("mouseover", function() {
-    easyChange.style.color = '#EF476F'
-	background.style.backgroundColor = '#FFD166'
 });
