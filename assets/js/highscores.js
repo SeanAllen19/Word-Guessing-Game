@@ -40,7 +40,11 @@ function displayDefinition(data) {
   		definitionDiv.appendChild(heading);
 	} 
 
-    fetchButton.addEventListener('click', getApi);
+	// only let the information from the api be pulled one time
+	fetchButton.addEventListener("click", getApi, { once: true });
+
+	
+	
 
 var fetchButton2 = document.getElementById('fetch-button2');
 
@@ -89,19 +93,21 @@ function displaySong(data) {
 		console.log(heading2)
 	} 
 
-    fetchButton2.addEventListener('click', getApi2);
+	// // only let the information from the api be pulled one time
+	
+	fetchButton2.addEventListener("click", getApi2, { once: true });
 
 // Color change -------------------------------------------------------------
-var easyChange = document.getElementById('colorChange2');
-var background = document.getElementById('body');
+// var easyChange = document.getElementById('colorChange2');
+// var background = document.getElementById('body');
 
 
-fetchButton.addEventListener("mouseover", function() {
-    easyChange.style.color = '#06D6A0'
-	background.style.backgroundColor = '#EF476F'
-});
+// fetchButton.addEventListener("mouseover", function() {
+//     easyChange.style.color = '#06D6A0'
+// 	background.style.backgroundColor = '#EF476F'
+// });
 
-fetchButton2.addEventListener("mouseover", function() {
-    easyChange.style.color = '#FFD166'
-	background.style.backgroundColor = '#06D6A0'
-});
+// fetchButton2.addEventListener("mouseover", function() {
+//     easyChange.style.color = '#FFD166'
+// 	background.style.backgroundColor = '#06D6A0'
+// });
