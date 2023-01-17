@@ -40,7 +40,11 @@ function displayDefinition(data) {
   		definitionDiv.appendChild(heading);
 	} 
 
-    fetchButton.addEventListener('click', getApi);
+	// only let the information from the api be pulled one time
+	fetchButton.addEventListener("click", getApi, { once: true });
+
+	
+	
 
 var fetchButton2 = document.getElementById('fetch-button2');
 
@@ -89,7 +93,9 @@ function displaySong(data) {
 		console.log(heading2)
 	} 
 
-    fetchButton2.addEventListener('click', getApi2);
+	// // only let the information from the api be pulled one time
+	
+	fetchButton2.addEventListener("click", getApi2, { once: true });
 
 // Color change -------------------------------------------------------------
 // var easyChange = document.getElementById('colorChange2');
