@@ -1,11 +1,11 @@
 // Global variables
-var storage = JSON.parse(localStorage.getItem('wordInfo'))
-var count = 5 //storage.wordLength 
-var storageWord= 'hello' //storage.word
-var word = storageWord.toUpperCase()
+var storage = JSON.parse(localStorage.getItem('wordInfo'));
+var count = storage.wordLength; 
+var storageWord = storage.word;
+var word = storageWord.toUpperCase();
 var row = count+1;
 var col = count;
-var grid = row*col
+var grid = row*col;
 var triedWord = Array(row)
                     .fill()
                     .map(() => Array(col).fill(''))
@@ -119,6 +119,8 @@ function checkWord() {
             document.getElementById(`box${[currentRow]}${i}`).style.backgroundColor = "#06D6A0"
         } else if (word.includes(currWordSplit[i])) {
             document.getElementById(`box${[currentRow]}${i}`).style.backgroundColor = "#FFD166"
+        } else {
+            document.getElementById(`box${[currentRow]}${i}`).style.backgroundColor = "#d3d3d3"
         }
     } 
 }
