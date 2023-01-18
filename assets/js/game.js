@@ -1,3 +1,4 @@
+
 // Global variables
 var storage = JSON.parse(localStorage.getItem('wordInfo'));
 var count = storage.wordLength; 
