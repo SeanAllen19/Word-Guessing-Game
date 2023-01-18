@@ -41,7 +41,7 @@ These instructions will get you a copy of the project up and running on your loc
     
 ## Built Using
 
-Github - https://github.com/
+GitHub - https://github.com/
 
 Random Words API - https://rapidapi.com/sheharyar566/api/random-words5
 
@@ -58,14 +58,14 @@ Coolers, Color Palette generator - https://coolors.co/
 <br>    
 
 ## Authors
-   
-  Brett Nachman - https://github.com/brettnachman
+     
+  Sean Allen - [GitHub](https://github.com/SeanAllen19)
   
-  Jeremy Crouthamel - https://github.com/Leyden05
+  Jeremy Crouthamel - [GitHub](https://github.com/Leyden05)
   
-  Sean Allen - https://github.com/SeanAllen19
+  Brett Nachman - [GitHub](https://github.com/brettnachman)
   
-  Dominique Nix - https://github.com/Dominique216
+  Dominique Nix - [GitHub](https://github.com/Dominique216)
   
   <br>   
 
