@@ -22,7 +22,6 @@ These instructions will get you a copy of the project up and running on your loc
 
 8. Press Enter and a new local cloned repository will be created.
 
-
 ### Start Page
 ![start page](./assets/whichword%20title.png)
 
