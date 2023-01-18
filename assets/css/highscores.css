@@ -37,7 +37,7 @@ p {
 }
 
 .restart {
-    margin-left: 475px;
+    margin-left: 25vw;
 }
 
 
@@ -49,7 +49,7 @@ p {
 button {
     appearance: none;
     border-radius: 10px;
-    background-color: #06D6A0;
+    background-color: white;
     cursor: pointer;
     display: inline-block;
     font-family: 'Inter';
@@ -70,7 +70,7 @@ button {
 
   #easy:hover {
     color: #fff;
-    background-color: #EF476F;
+    background-color: #06D6A0;
     box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
     transform: translateY(-8px);
   }
@@ -79,3 +79,30 @@ button {
     box-shadow: none;
     transform: translateY(0);
   }
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: #06D6A0;
+}
+
+#colorChange2 {
+    color: #06D6A0;
+}
+#cardRevealTitle {
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#song {
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#url {
+    font-size: 66%;
+}
