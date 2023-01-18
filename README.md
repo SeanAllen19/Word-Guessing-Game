@@ -2,6 +2,8 @@
 
 WhichWord is Wordle clone made with pure Javascript, HTML, and CSS. When you visit the WhichWord website, you are introduced to a game title with a Easy, Medium or Hard selection. Easy being a 5 letter word, Medium being a 6 letter word and Hard being a 7 letter word. Each box can hold one letter, and so you guess at the answer by typing in letters word and pressing 'Enter'. There aren't any clues up front, so any letter will do as an initial guess.
 
+<br>   
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
@@ -20,7 +22,11 @@ These instructions will get you a copy of the project up and running on your loc
 
 7. git clone https://github.com/SeanAllen19/Word-Guessing-Game.git
 
-8. Press Enter and a new local cloned repository will be created.
+8. Press Enter and a new local cloned repository will be created.   
+    
+    <br>  
+
+## Screenshots
 
 ### Start Page
 ![start page](./assets/whichword%20title.png)
@@ -31,7 +37,27 @@ These instructions will get you a copy of the project up and running on your loc
 ### End Screen Page
 ![end page](./assets/whichword%20end%20page.png)
 
-# Authors
+<br>      
+    
+## Built Using
+
+Github - https://github.com/
+
+Random Words API - https://rapidapi.com/sheharyar566/api/random-words5
+
+Genius - Song Lyrics API - https://rapidapi.com/Glavier/api/genius-song-lyrics1/
+
+Dictionary by API Ninjas API - https://rapidapi.com/apininjas/api/dictionary-by-api-ninjas/
+
+Materialize, CSS Framework - https://materializecss.com/about.html
+
+Inter, Google Fonts - https://fonts.google.com/specimen/Inter
+
+Coolers, Color Palette generator - https://coolors.co/
+
+<br>    
+
+## Authors
    
   Brett Nachman - https://github.com/brettnachman
   
@@ -41,9 +67,9 @@ These instructions will get you a copy of the project up and running on your loc
   
   Dominique Nix - https://github.com/Dominique216
   
-  
- 
-# Developments
+  <br>   
+
+## Development
 
 We were assigned together to work on a project and with most ideas we brainstormed and shared ideas.
 
@@ -51,24 +77,23 @@ We were assigned together to work on a project and with most ideas we brainstorm
 
 ![Bretts sketch](./assets/Bretts%201st%20sketch.jpg)
 
+<br>     
 
-# Acknowledgements
+## Saved for Later
+
+Allow for a letter choice to only highlight a single instance of that letter if it appears in the word
+
+Add an API that delivers quotes based on the correct word
+
+Call on additional features in the dictionary API (e.g., thesaurus and etymology)
+
+Call on additional freatures in the song API (e.g., a link to hear the song play, view album or artist artwork)
+
+<br>     
+
+## Acknowledgements
 
 Thank you to all of our friends, online and IRL for all of the help and motivation!!
-
-Github 
-
-Random Words API - https://rapidapi.com/sheharyar566/api/random-words5
-
-Shazam API - https://rapidapi.com/apidojo/api/shazam
-
-Words API - https://rapidapi.com/dpventures/api/wordsapi/
-
-Materialize, CSS Framework - https://materializecss.com/about.html
-
-Inter, Google Fonts - https://fonts.google.com/specimen/Inter
-
-Coolers, Color Palette generator - https://coolors.co/
 
 Canva - https://www.canva.com/
 
