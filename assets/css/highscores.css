@@ -8,7 +8,7 @@
 
 body {
     font-size: 28px;
-    background-color: #073B4C;
+    background-color: var(--darkblue);
     justify-content: center;
     align-items: center;
 }
@@ -37,7 +37,7 @@ p {
 }
 
 .restart {
-    margin-left: 475px;
+    margin-left: 25vw;
 }
 
 
@@ -49,6 +49,7 @@ p {
 button {
     appearance: none;
     border-radius: 10px;
+    background-color: white;
     cursor: pointer;
     display: inline-block;
     font-family: 'Inter';
@@ -78,3 +79,30 @@ button {
     box-shadow: none;
     transform: translateY(0);
   }
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: #06D6A0;
+}
+
+#colorChange2 {
+    color: #06D6A0;
+}
+#cardRevealTitle {
+    padding-right: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#song {
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#url {
+    font-size: 66%;
+}
